@@ -1,16 +1,6 @@
-| Parameter | Description                                      |
-|-----------|--------------------------------------------------|
-| `/CONFIG/DATABASE/TYPE`  | Specifies the type of the database (i.e., mysql, postgresql,mssql). |
-| `/CONFIG/DATABASE/NAME`  | Specifies the name of the database.             |
-| `/CONFIG/DATABASE/HOST`  | Specifies the host address of the database.     |
-| `/CONFIG/DATABASE/PORT`  | Specifies the port number of the database.      |
-| `/CONFIG/DATABASE/USERNAME` | Specifies the username used to authenticate to the database. The `ENCRYPTED` attribute indicates whether the username is encrypted or not (YES/NO). |
-| `/CONFIG/DATABASE/PASSWORD` | Specifies the password used to authenticate to the database. The `ENCRYPTED` attribute indicates whether the password is encrypted or not (YES/NO). |
-| `/CONFIG/API/HOST`  | Specifies the host address of the API.     |
-| `/CONFIG/API/PORT`  | Specifies the port number of the API.      |
 
-# exam_system
-A primary school wishes to implement a simple online exams platform that pupils in their class can take and the system marks the exam for them.
+# Exam_sytem_api
+This online exam API streamlines exam management and assessment for educational platforms, offering intuitive endpoints and automated grading features. It enhances efficiency and accessibility for educators and students alike.
 
 # POSTMAN COLLECTION
 Check out my API Documentation for detailed information on how to use the API.
