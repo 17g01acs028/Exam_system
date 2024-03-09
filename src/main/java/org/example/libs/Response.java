@@ -3,12 +3,19 @@ package org.example.libs;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.net.http.HttpResponse;
+
 public class Response {
     private boolean status;
     private String message;
 
     private JSONArray obj_message;
     private int code;
+
+    private int pageSize;
+    private int page;
+    private int pages;
+    private long totalRecord;
 
     public Response(boolean status, String message) {
         this.status = status;
@@ -23,6 +30,15 @@ public class Response {
     public Response(int code, JSONArray obj_message) {
         this.code = code;
         this.obj_message = obj_message;
+    }
+
+    public Response(int code, JSONArray obj_message, int pages, int page, long totalRecord, int pageSize){
+        this.code = code;
+        this.obj_message= obj_message;
+        this.pages = pages;
+        this.page =page;
+        this.totalRecord = totalRecord;
+        this.pageSize = pageSize;
     }
 
     // Getters for status and message
@@ -54,6 +70,36 @@ public class Response {
     // Setters
     public void setStatus(boolean status) {
         this.status = status;
+    }
+
+    public void setPage(int page){
+        this.page =page;
+    }
+
+    public void setPageSize(int pageSize){
+        this.pageSize = pageSize;
+    }
+
+    public void setPages(int pages){
+        this.pages = pages;
+    }
+    public void setTotalRecord(long totalRecord){
+        this.totalRecord = totalRecord;
+    }
+
+    public int getPage(){
+        return  this.page;
+    }
+    public int getPageSize(){
+        return this.pageSize;
+    }
+
+    public long getTotalRecord(){
+        return this.totalRecord;
+    }
+
+    public int getPages(){
+        return this.pages;
     }
     public String getFieldValue(String fieldName) {
         if (this.obj_message != null && this.obj_message.length() > 0) {

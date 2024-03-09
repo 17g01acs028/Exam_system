@@ -1,7 +1,6 @@
 package org.example.reports;
 
-import org.example.QueryBuilder.QueryBuilder;
-import org.example.QueryBuilder.QueryBuilderNew;
+import org.example.queryBuilder.QueryBuilder;
 import org.example.libs.Response;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -33,7 +32,7 @@ public static Response teacherExam(Connection conn, int id) {
                 "JOIN responses resp ON st.student_id = resp.student_id " +
                 "JOIN options opt ON resp.option_id = opt.option_id " +
                 "JOIN questions q ON resp.question_id = q.question_id " +
-                "JOIN exam_subject es ON q.exam_subject_id = es.exam_subject_id " +
+                "JOIN exam_schedule es ON q.exam_schedule_id = es.exam_schedule_id " +
                 "JOIN exam ex ON es.exam_id = ex.exam_id " +
                 "JOIN subject subj ON es.subject_id = subj.subject_id " +
                 "WHERE st.student_id = "+student_id+" AND ex.exam_id = "+exam_id+" " +
@@ -41,24 +40,5 @@ public static Response teacherExam(Connection conn, int id) {
         return QueryBuilder.querySelect(conn, query);
     }
 
-    public static Response studentMerit(Connection conn, int limit, int exam_id){
-        QueryBuilderNew qb = new QueryBuilderNew(conn);
-        qb.setParameter("exam_id",exam_id);
-        String query = "SELECT s.firstname, s.lastname, e.exam_name, SUM(CASE WHEN o.correct = 1 THEN q.marks ELSE 0 END) AS total_marks,\n" +
-                "       ROW_NUMBER() OVER (ORDER BY SUM(CASE WHEN o.correct = 1 THEN q.marks ELSE 0 END) DESC) AS ranking\n" +
-                "FROM student s\n" +
-                "JOIN responses r ON s.student_id = r.student_id\n" +
-                "JOIN questions q ON r.question_id = q.question_id\n" +
-                "JOIN options o ON r.option_id = o.option_id\n" +
-                "JOIN exam e ON q.exam_id = e.exam_id\n" +
-                "WHERE e.exam_id = :exam_id\n" +
-                "GROUP BY s.student_id\n" +
-                "ORDER BY total_marks DESC\n" +
-                "LIMIT "+limit;
-        try {
-            return qb.executeSelectQuery(query);
-        } catch (SQLException e) {
-            return  new Response(500, "Error: "+e.getMessage());
-        }
-    }
+
 }

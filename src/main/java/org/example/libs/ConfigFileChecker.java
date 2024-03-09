@@ -3,7 +3,8 @@ package org.example.libs;
 import java.io.File;
 
 public class ConfigFileChecker {
-    public static Response configFileChecker(String filePath,String fileName){
+    public static Response configFileChecker(String filePath){
+        String fileName;
         File configDir = new File(filePath);
         File[] files = configDir.listFiles();
 
@@ -23,6 +24,7 @@ public class ConfigFileChecker {
                 }
             }
         } catch (Exception e) {
+            e.printStackTrace();
             return new Response(false,e.getMessage());
         }
 
