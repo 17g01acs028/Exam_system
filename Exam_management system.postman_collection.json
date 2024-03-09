@@ -1,0 +1,2820 @@
+{
+	"info": {
+		"_postman_id": "fd7ce2d3-b3f7-4e8d-8a38-d07056fc099a",
+		"name": "Exam_management system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25506702"
+	},
+	"item": [
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "get students",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "8htA4HiqpA3gvxeQkoLgOTMaz6TqSF+8Lv1pjVD50dq6ElHEfDKz+IktIAx4Y46uiGH0EM1Cei1yhIZweb/JhC5+xmEkazLlOy0qiKWZKao=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/students",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"students"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get students",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/students",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"students"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4058"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 09:44:01 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"postal_address\": \"90115\",\n        \"firstname\": \"John\",\n        \"guardian_name\": \"Jane Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-01-01\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"1\",\n        \"lastname\": \"Doe1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"123 Main St\",\n        \"student_reg_number\": \"10001\",\n        \"guardian_phone\": \"0123456789\",\n        \"username\": \"john.doe01\"\n    },\n    {\n        \"postal_address\": \"100200\",\n        \"firstname\": \"Jane\",\n        \"guardian_name\": \"John Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-02-02\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"2\",\n        \"lastname\": \"Doe2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"124 Main St\",\n        \"student_reg_number\": \"10002\",\n        \"guardian_phone\": \"9876543210\",\n        \"username\": \"jane.doe02\"\n    },\n    {\n        \"postal_address\": \"140020\",\n        \"firstname\": \"Jim\",\n        \"guardian_name\": \"Janet Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-03-03\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"3\",\n        \"lastname\": \"Beam1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"125 Main St\",\n        \"student_reg_number\": \"10003\",\n        \"guardian_phone\": \"0123456781\",\n        \"username\": \"jim.beam01\"\n    },\n    {\n        \"postal_address\": \"130012\",\n        \"firstname\": \"Jill\",\n        \"guardian_name\": \"James Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-04-04\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"4\",\n        \"lastname\": \"Beam2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"126 Main St\",\n        \"student_reg_number\": \"10004\",\n        \"guardian_phone\": \"9876543211\",\n        \"username\": \"jill.beam02\"\n    },\n    {\n        \"postal_address\": \"200200\",\n        \"firstname\": \"Jake\",\n        \"guardian_name\": \"Jasmine Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-05-05\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"5\",\n        \"lastname\": \"Long1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"127 Main St\",\n        \"student_reg_number\": \"10005\",\n        \"guardian_phone\": \"0123456782\",\n        \"username\": \"jake.long01\"\n    },\n    {\n        \"postal_address\": \"210210\",\n        \"firstname\": \"Joy\",\n        \"guardian_name\": \"Jackson Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-06-06\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"6\",\n        \"lastname\": \"Long2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"128 Main St\",\n        \"student_reg_number\": \"10006\",\n        \"guardian_phone\": \"9876543212\",\n        \"username\": \"joy.long02\"\n    },\n    {\n        \"postal_address\": \"130130\",\n        \"firstname\": \"Josh\",\n        \"guardian_name\": \"Julia Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-07-07\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"7\",\n        \"lastname\": \"King1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"129 Main St\",\n        \"student_reg_number\": \"10007\",\n        \"guardian_phone\": \"0123456783\",\n        \"username\": \"josh.king01\"\n    },\n    {\n        \"postal_address\": \"90115\",\n        \"firstname\": \"Jade\",\n        \"guardian_name\": \"Jeremy Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-08-08\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"8\",\n        \"lastname\": \"King2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"130 Main St\",\n        \"student_reg_number\": \"10008\",\n        \"guardian_phone\": \"9876543213\",\n        \"username\": \"jade.king02\"\n    },\n    {\n        \"postal_address\": \"90116\",\n        \"firstname\": \"Joe\",\n        \"guardian_name\": \"Janice Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-09-09\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"9\",\n        \"lastname\": \"Smith1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"131 Main St\",\n        \"student_reg_number\": \"10009\",\n        \"guardian_phone\": \"0123456784\",\n        \"username\": \"joe.smith01\"\n    },\n    {\n        \"postal_address\": \"90117\",\n        \"firstname\": \"Julie\",\n        \"guardian_name\": \"Justin Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-10-10\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"10\",\n        \"lastname\": \"Smith2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"132 Main St\",\n        \"student_reg_number\": \"10010\",\n        \"guardian_phone\": \"9876543214\",\n        \"username\": \"julie.smith02\"\n    },\n    {\n        \"postal_address\": \"1039\",\n        \"firstname\": \"Joro\",\n        \"guardian_name\": \"Mutua makau\",\n        \"gender\": \"Male\",\n        \"city\": \"Nairobi\",\n        \"date_of_birth\": \"1998-11-11\",\n        \"date_created\": \"2024-02-20 13:29:42\",\n        \"class_id\": \"1\",\n        \"student_id\": \"11\",\n        \"lastname\": \"Kamau\",\n        \"password\": \"123456789\",\n        \"home_address\": \"90115-Kangundo\",\n        \"date_modified\": \"2024-02-27 05:34:49\",\n        \"student_reg_number\": \"17g01acs028\",\n        \"guardian_phone\": \"0701336369\",\n        \"username\": \"Jorowakamau\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get students search with  pagination and filter starting with",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "8htA4HiqpA3gvxeQkoLgOTMaz6TqSF+8Lv1pjVD50dq6ElHEfDKz+IktIAx4Y46uiGH0EM1Cei1yhIZweb/JhC5+xmEkazLlOy0qiKWZKao=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/students?pageSize=2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"students"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "2"
+								},
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "243826",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get students",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/students",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"students"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4058"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 09:44:01 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"postal_address\": \"90115\",\n        \"firstname\": \"John\",\n        \"guardian_name\": \"Jane Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-01-01\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"1\",\n        \"lastname\": \"Doe1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"123 Main St\",\n        \"student_reg_number\": \"10001\",\n        \"guardian_phone\": \"0123456789\",\n        \"username\": \"john.doe01\"\n    },\n    {\n        \"postal_address\": \"100200\",\n        \"firstname\": \"Jane\",\n        \"guardian_name\": \"John Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-02-02\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"2\",\n        \"lastname\": \"Doe2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"124 Main St\",\n        \"student_reg_number\": \"10002\",\n        \"guardian_phone\": \"9876543210\",\n        \"username\": \"jane.doe02\"\n    },\n    {\n        \"postal_address\": \"140020\",\n        \"firstname\": \"Jim\",\n        \"guardian_name\": \"Janet Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-03-03\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"3\",\n        \"lastname\": \"Beam1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"125 Main St\",\n        \"student_reg_number\": \"10003\",\n        \"guardian_phone\": \"0123456781\",\n        \"username\": \"jim.beam01\"\n    },\n    {\n        \"postal_address\": \"130012\",\n        \"firstname\": \"Jill\",\n        \"guardian_name\": \"James Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-04-04\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"4\",\n        \"lastname\": \"Beam2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"126 Main St\",\n        \"student_reg_number\": \"10004\",\n        \"guardian_phone\": \"9876543211\",\n        \"username\": \"jill.beam02\"\n    },\n    {\n        \"postal_address\": \"200200\",\n        \"firstname\": \"Jake\",\n        \"guardian_name\": \"Jasmine Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-05-05\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"5\",\n        \"lastname\": \"Long1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"127 Main St\",\n        \"student_reg_number\": \"10005\",\n        \"guardian_phone\": \"0123456782\",\n        \"username\": \"jake.long01\"\n    },\n    {\n        \"postal_address\": \"210210\",\n        \"firstname\": \"Joy\",\n        \"guardian_name\": \"Jackson Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-06-06\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"6\",\n        \"lastname\": \"Long2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"128 Main St\",\n        \"student_reg_number\": \"10006\",\n        \"guardian_phone\": \"9876543212\",\n        \"username\": \"joy.long02\"\n    },\n    {\n        \"postal_address\": \"130130\",\n        \"firstname\": \"Josh\",\n        \"guardian_name\": \"Julia Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-07-07\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"7\",\n        \"lastname\": \"King1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"129 Main St\",\n        \"student_reg_number\": \"10007\",\n        \"guardian_phone\": \"0123456783\",\n        \"username\": \"josh.king01\"\n    },\n    {\n        \"postal_address\": \"90115\",\n        \"firstname\": \"Jade\",\n        \"guardian_name\": \"Jeremy Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-08-08\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"8\",\n        \"lastname\": \"King2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"130 Main St\",\n        \"student_reg_number\": \"10008\",\n        \"guardian_phone\": \"9876543213\",\n        \"username\": \"jade.king02\"\n    },\n    {\n        \"postal_address\": \"90116\",\n        \"firstname\": \"Joe\",\n        \"guardian_name\": \"Janice Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-09-09\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"9\",\n        \"lastname\": \"Smith1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"131 Main St\",\n        \"student_reg_number\": \"10009\",\n        \"guardian_phone\": \"0123456784\",\n        \"username\": \"joe.smith01\"\n    },\n    {\n        \"postal_address\": \"90117\",\n        \"firstname\": \"Julie\",\n        \"guardian_name\": \"Justin Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-10-10\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"10\",\n        \"lastname\": \"Smith2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"132 Main St\",\n        \"student_reg_number\": \"10010\",\n        \"guardian_phone\": \"9876543214\",\n        \"username\": \"julie.smith02\"\n    },\n    {\n        \"postal_address\": \"1039\",\n        \"firstname\": \"Joro\",\n        \"guardian_name\": \"Mutua makau\",\n        \"gender\": \"Male\",\n        \"city\": \"Nairobi\",\n        \"date_of_birth\": \"1998-11-11\",\n        \"date_created\": \"2024-02-20 13:29:42\",\n        \"class_id\": \"1\",\n        \"student_id\": \"11\",\n        \"lastname\": \"Kamau\",\n        \"password\": \"123456789\",\n        \"home_address\": \"90115-Kangundo\",\n        \"date_modified\": \"2024-02-27 05:34:49\",\n        \"student_reg_number\": \"17g01acs028\",\n        \"guardian_phone\": \"0701336369\",\n        \"username\": \"Jorowakamau\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get students search with pagination and full column search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/students?pageSize=8&page=1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"students"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "\"jade.king02\"",
+									"disabled": true
+								},
+								{
+									"key": "pageSize",
+									"value": "8"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"disabled": true
+								},
+								{
+									"key": " cit:eq:city name)",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get students",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/students",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"students"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4058"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 09:44:01 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"postal_address\": \"90115\",\n        \"firstname\": \"John\",\n        \"guardian_name\": \"Jane Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-01-01\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"1\",\n        \"lastname\": \"Doe1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"123 Main St\",\n        \"student_reg_number\": \"10001\",\n        \"guardian_phone\": \"0123456789\",\n        \"username\": \"john.doe01\"\n    },\n    {\n        \"postal_address\": \"100200\",\n        \"firstname\": \"Jane\",\n        \"guardian_name\": \"John Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-02-02\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"2\",\n        \"lastname\": \"Doe2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"124 Main St\",\n        \"student_reg_number\": \"10002\",\n        \"guardian_phone\": \"9876543210\",\n        \"username\": \"jane.doe02\"\n    },\n    {\n        \"postal_address\": \"140020\",\n        \"firstname\": \"Jim\",\n        \"guardian_name\": \"Janet Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-03-03\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"3\",\n        \"lastname\": \"Beam1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"125 Main St\",\n        \"student_reg_number\": \"10003\",\n        \"guardian_phone\": \"0123456781\",\n        \"username\": \"jim.beam01\"\n    },\n    {\n        \"postal_address\": \"130012\",\n        \"firstname\": \"Jill\",\n        \"guardian_name\": \"James Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-04-04\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"4\",\n        \"lastname\": \"Beam2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"126 Main St\",\n        \"student_reg_number\": \"10004\",\n        \"guardian_phone\": \"9876543211\",\n        \"username\": \"jill.beam02\"\n    },\n    {\n        \"postal_address\": \"200200\",\n        \"firstname\": \"Jake\",\n        \"guardian_name\": \"Jasmine Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-05-05\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"5\",\n        \"lastname\": \"Long1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"127 Main St\",\n        \"student_reg_number\": \"10005\",\n        \"guardian_phone\": \"0123456782\",\n        \"username\": \"jake.long01\"\n    },\n    {\n        \"postal_address\": \"210210\",\n        \"firstname\": \"Joy\",\n        \"guardian_name\": \"Jackson Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-06-06\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"6\",\n        \"lastname\": \"Long2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"128 Main St\",\n        \"student_reg_number\": \"10006\",\n        \"guardian_phone\": \"9876543212\",\n        \"username\": \"joy.long02\"\n    },\n    {\n        \"postal_address\": \"130130\",\n        \"firstname\": \"Josh\",\n        \"guardian_name\": \"Julia Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-07-07\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"7\",\n        \"lastname\": \"King1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"129 Main St\",\n        \"student_reg_number\": \"10007\",\n        \"guardian_phone\": \"0123456783\",\n        \"username\": \"josh.king01\"\n    },\n    {\n        \"postal_address\": \"90115\",\n        \"firstname\": \"Jade\",\n        \"guardian_name\": \"Jeremy Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-08-08\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"8\",\n        \"lastname\": \"King2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"130 Main St\",\n        \"student_reg_number\": \"10008\",\n        \"guardian_phone\": \"9876543213\",\n        \"username\": \"jade.king02\"\n    },\n    {\n        \"postal_address\": \"90116\",\n        \"firstname\": \"Joe\",\n        \"guardian_name\": \"Janice Doe\",\n        \"gender\": \"M\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-09-09\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"9\",\n        \"lastname\": \"Smith1\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"131 Main St\",\n        \"student_reg_number\": \"10009\",\n        \"guardian_phone\": \"0123456784\",\n        \"username\": \"joe.smith01\"\n    },\n    {\n        \"postal_address\": \"90117\",\n        \"firstname\": \"Julie\",\n        \"guardian_name\": \"Justin Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-10-10\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"10\",\n        \"lastname\": \"Smith2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"132 Main St\",\n        \"student_reg_number\": \"10010\",\n        \"guardian_phone\": \"9876543214\",\n        \"username\": \"julie.smith02\"\n    },\n    {\n        \"postal_address\": \"1039\",\n        \"firstname\": \"Joro\",\n        \"guardian_name\": \"Mutua makau\",\n        \"gender\": \"Male\",\n        \"city\": \"Nairobi\",\n        \"date_of_birth\": \"1998-11-11\",\n        \"date_created\": \"2024-02-20 13:29:42\",\n        \"class_id\": \"1\",\n        \"student_id\": \"11\",\n        \"lastname\": \"Kamau\",\n        \"password\": \"123456789\",\n        \"home_address\": \"90115-Kangundo\",\n        \"date_modified\": \"2024-02-27 05:34:49\",\n        \"student_reg_number\": \"17g01acs028\",\n        \"guardian_phone\": \"0701336369\",\n        \"username\": \"Jorowakamau\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/students/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"students",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get student",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/students/2",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"students",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "363"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 09:44:22 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"postal_address\": \"100200\",\n        \"firstname\": \"Jane\",\n        \"guardian_name\": \"John Doe\",\n        \"gender\": \"F\",\n        \"city\": \"City1\",\n        \"date_of_birth\": \"2005-02-02\",\n        \"date_created\": \"2024-02-01 06:12:54\",\n        \"class_id\": \"1\",\n        \"student_id\": \"2\",\n        \"lastname\": \"Doe2\",\n        \"password\": \"encrypted_password\",\n        \"home_address\": \"124 Main St\",\n        \"student_reg_number\": \"10002\",\n        \"guardian_phone\": \"9876543210\",\n        \"username\": \"jane.doe02\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "add student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"postal_address\": \"1030\",\n        \"firstname\": \"John\",\n        \"guardian_name\": \"John makau\",\n        \"gender\": \"Male\",\n        \"city\": \"Nairobi\",\n        \"date_of_birth\": \"1998-11-11\",\n        \"date_created\": \"2024-02-29 09:56:28\",\n        \"class_id\": \"1\",\n        \"student_id\": \"13\",\n        \"lastname\": \"Kamau\",\n        \"password\": \"123456789\",\n        \"home_address\": \"90115-Kangundo\",\n        \"student_reg_number\": \"17g01acs029\",\n        \"guardian_phone\": \"0769407226\",\n        \"username\": \"John.kamau\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/students",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add student",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"postal_address\": \"1030\",\n  \"firstname\": \"John\",\n  \"guardian_name\": \"John makau\",\n  \"gender\": \"Male\",\n  \"city\": \"Nairobi\",\n  \"date_of_birth\": \"1998-11-11\",\n  \"class_id\": \"1\",\n  \"lastname\": \"Kamau\",\n  \"home_address\": \"90115-Kangundo\",\n  \"student_reg_number\": \"17g01acs029\",\n  \"Guardian_phone\": \"0769407226\",\n  \"username\": \"John.kamau\",\n  \"password\": \"123456789\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/students",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"students"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "370"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 09:56:28 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"postal_address\": \"1030\",\n        \"firstname\": \"John\",\n        \"guardian_name\": \"John makau\",\n        \"gender\": \"Male\",\n        \"city\": \"Nairobi\",\n        \"date_of_birth\": \"1998-11-11\",\n        \"date_created\": \"2024-02-29 09:56:28\",\n        \"class_id\": \"1\",\n        \"student_id\": \"13\",\n        \"lastname\": \"Kamau\",\n        \"password\": \"123456789\",\n        \"home_address\": \"90115-Kangundo\",\n        \"student_reg_number\": \"17g01acs029\",\n        \"guardian_phone\": \"0769407226\",\n        \"username\": \"John.kamau\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "update student",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"postal_address\": \"1032\",\n  \"firstname\": \"Johnk\",\n  \"city\": \"Machakos\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/students/11",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"students",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update student",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"postal_address\": \"1032\",\n  \"firstname\": \"Johnk\",\n  \"city\": \"Machakos\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/students/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"students",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "412"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 09:58:11 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"postal_address\": \"1032\",\n        \"firstname\": \"Johnk\",\n        \"guardian_name\": \"Mutua makau\",\n        \"gender\": \"Male\",\n        \"city\": \"Machakos\",\n        \"date_of_birth\": \"1998-11-11\",\n        \"date_created\": \"2024-02-20 13:29:42\",\n        \"class_id\": \"1\",\n        \"student_id\": \"11\",\n        \"lastname\": \"Kamau\",\n        \"password\": \"123456789\",\n        \"home_address\": \"90115-Kangundo\",\n        \"date_modified\": \"2024-02-29 01:58:11\",\n        \"student_reg_number\": \"17g01acs028\",\n        \"guardian_phone\": \"0701336369\",\n        \"username\": \"Jorowakamau\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Subjects",
+			"item": [
+				{
+					"name": "get subjects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/subjects",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"subjects"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get subjects",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/subjects",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"subjects"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "660"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 09:58:54 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"subject_id\": \"1\",\n        \"date_created\": \"2024-02-01 05:45:02\",\n        \"subject_name\": \"English\"\n    },\n    {\n        \"subject_id\": \"2\",\n        \"date_created\": \"2024-02-01 05:45:02\",\n        \"subject_name\": \"Mathematics\"\n    },\n    {\n        \"subject_id\": \"3\",\n        \"date_created\": \"2024-02-01 05:45:02\",\n        \"subject_name\": \"Kiswahili\"\n    },\n    {\n        \"subject_id\": \"4\",\n        \"date_created\": \"2024-02-01 05:45:02\",\n        \"subject_name\": \"Social Studies\"\n    },\n    {\n        \"subject_id\": \"5\",\n        \"date_created\": \"2024-02-01 05:45:02\",\n        \"subject_name\": \"Science\"\n    },\n    {\n        \"subject_id\": \"6\",\n        \"date_modified\": \"2024-02-20 17:03:37\",\n        \"date_created\": \"2024-02-20 14:02:28\",\n        \"subject_name\": \"PE new\"\n    },\n    {\n        \"subject_id\": \"7\",\n        \"date_modified\": \"2024-02-27 05:36:37\",\n        \"date_created\": \"2024-02-27 13:35:54\",\n        \"subject_name\": \"PE new zero\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get subject",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/subjects/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"subjects",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get subject",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/subjects/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"subjects",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "82"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 09:59:14 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"subject_id\": \"1\",\n        \"date_created\": \"2024-02-01 05:45:02\",\n        \"subject_name\": \"English\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "add subject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subject_name\": \"PE Science 3\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/subjects",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"subjects"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add subject",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"subject_name\": \"PE Science 3\"\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/subjects",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"subjects"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "87"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 10:01:04 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"subject_id\": \"8\",\n        \"date_created\": \"2024-02-29 10:01:04\",\n        \"subject_name\": \"PE Science 3\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "update subject",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subject_name\": \"PE Science 9\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/subjects/7",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"subjects",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update subject",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"subject_name\": \"PE Science 9\"\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/subjects/7",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"subjects",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "125"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 10:01:48 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"subject_id\": \"7\",\n        \"date_modified\": \"2024-02-29 02:01:48\",\n        \"date_created\": \"2024-02-27 13:35:54\",\n        \"subject_name\": \"PE Science 9\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "questions",
+			"item": [
+				{
+					"name": "get questions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/questions",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"questions"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get questions",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/questions",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"questions"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3832"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 10:39:15 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"1\",\n        \"text\": \"Define the term \\\"metaphor\\\".\",\n        \"marks\": \"5\",\n        \"question_id\": \"1\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"1\",\n        \"text\": \"Analyze the main theme in Shakespeare’s \\\"Macbeth\\\".\",\n        \"marks\": \"5\",\n        \"question_id\": \"2\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"1\",\n        \"text\": \"Write a short essay on the impact of literature in modern society.\",\n        \"marks\": \"5\",\n        \"question_id\": \"3\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"1\",\n        \"text\": \"Explain the difference between a simile and a metaphor.\",\n        \"marks\": \"5\",\n        \"question_id\": \"4\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"1\",\n        \"text\": \"Identify the subject and predicate in this sentence: \\\"The quick brown fox jumps over the lazy dog.\\\"\",\n        \"marks\": \"5\",\n        \"question_id\": \"5\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"2\",\n        \"text\": \"Solve the equation 3x + 5 = 14.\",\n        \"marks\": \"5\",\n        \"question_id\": \"6\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"2\",\n        \"text\": \"Calculate the derivative of the function f(x) = x^2 + 3x.\",\n        \"marks\": \"5\",\n        \"question_id\": \"7\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"2\",\n        \"text\": \"If the probability of event A is 0.3, what is the probability of its complement?\",\n        \"marks\": \"5\",\n        \"question_id\": \"8\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"2\",\n        \"text\": \"Graph the function y = 2x - 4.\",\n        \"marks\": \"5\",\n        \"question_id\": \"9\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"2\",\n        \"text\": \"Find the area of a circle with radius 5 units.\",\n        \"marks\": \"5\",\n        \"question_id\": \"10\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"3\",\n        \"text\": \"Taja na ueleze sifa kuu za fasihi simulizi.\",\n        \"marks\": \"5\",\n        \"question_id\": \"11\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"3\",\n        \"text\": \"Changanua maudhui ya riwaya ya \\\"Kusadikika\\\" na Shaaban Robert.\",\n        \"marks\": \"5\",\n        \"question_id\": \"12\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"3\",\n        \"text\": \"Eleza maana ya methali: \\\"Haraka haraka haina baraka.\\\"\",\n        \"marks\": \"5\",\n        \"question_id\": \"13\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"3\",\n        \"text\": \"Tunga sentensi kwa kutumia neno \\\"upendo\\\".\",\n        \"marks\": \"5\",\n        \"question_id\": \"14\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"3\",\n        \"text\": \"Taja na ueleze ngeli za Kiswahili.\",\n        \"marks\": \"5\",\n        \"question_id\": \"15\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"4\",\n        \"text\": \"Describe the major causes of World War II.\",\n        \"marks\": \"5\",\n        \"question_id\": \"16\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"4\",\n        \"text\": \"Explain the water cycle and its importance to the environment.\",\n        \"marks\": \"5\",\n        \"question_id\": \"17\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"4\",\n        \"text\": \"Discuss the impact of colonialism in African countries.\",\n        \"marks\": \"5\",\n        \"question_id\": \"18\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"4\",\n        \"text\": \"Name and describe the three branches of government.\",\n        \"marks\": \"5\",\n        \"question_id\": \"19\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"4\",\n        \"text\": \"What are renewable resources? Give two examples.\",\n        \"marks\": \"5\",\n        \"question_id\": \"20\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"5\",\n        \"text\": \"What is the process of photosynthesis?\",\n        \"marks\": \"5\",\n        \"question_id\": \"21\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"5\",\n        \"text\": \"Explain Newton’s third law of motion.\",\n        \"marks\": \"5\",\n        \"question_id\": \"22\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"5\",\n        \"text\": \"Describe the structure of a plant cell.\",\n        \"marks\": \"5\",\n        \"question_id\": \"23\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"5\",\n        \"text\": \"What are the states of matter? Give an example of each.\",\n        \"marks\": \"5\",\n        \"question_id\": \"24\"\n    },\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"5\",\n        \"text\": \"Define and explain the term \\\"ecosystem\\\".\",\n        \"marks\": \"5\",\n        \"question_id\": \"25\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get question",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/questions/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"questions",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get question",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/questions/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"questions",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "132"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 10:39:40 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"date_created\": \"2024-02-01 06:26:22\",\n        \"exam_schedule_id\": \"1\",\n        \"text\": \"Define the term \\\"metaphor\\\".\",\n        \"marks\": \"5\",\n        \"question_id\": \"1\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "add student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"exam_schedule_id\": \"exam_schedule_id value\",\n    \"text\": \"question text value\",\n    \"marks\": \"marks value\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/questions",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update student",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\": \"question text value\",\n    \"marks\": \"marks value\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/questions/id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"questions",
+								"id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Exams",
+			"item": [
+				{
+					"name": "get exams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/exam/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"exam",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get exams",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/exams",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"exams"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "243"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 11:10:16 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"date_created\": \"2024-02-01 05:42:04\",\n        \"exam_name\": \"Final exam\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"date_created\": \"2024-02-01 05:42:04\",\n        \"exam_name\": \"Midterm Exam\",\n        \"exam_id\": \"2\"\n    },\n    {\n        \"date_created\": \"2024-02-01 05:42:04\",\n        \"exam_name\": \"End of year Exam\",\n        \"exam_id\": \"3\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get exam",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/exams/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"exams",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get exam",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/exams/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"exams",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 11:10:39 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"date_created\": \"2024-02-01 05:42:04\",\n    \"exam_name\": \"Final exam\",\n    \"exam_id\": \"1\"\n}"
+						}
+					]
+				},
+				{
+					"name": "add exam",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"exam_name\":\"End of year Exam 2025\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/exams",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"exams"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add exam",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"exam_name\":\"End of year Exam 2025\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/exams",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"exams"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "88"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:41:41 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"date_created\": \"2024-03-01 09:41:41\",\n    \"exam_name\": \"End of year Exam 2025\",\n    \"exam_id\": \"8\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update exam",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"exam_name\":\"End of year Exam 2025 new\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/exams/8",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"exams",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update exam",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"exam_name\":\"End of year Exam 2025 new\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/exams/8",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"exams",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:42:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"date_modified\": \"2024-03-01 01:42:13\",\n    \"date_created\": \"2024-03-01 09:41:41\",\n    \"exam_name\": \"End of year Exam 2025 new\",\n    \"exam_id\": \"8\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Teachers",
+			"item": [
+				{
+					"name": "get teachers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "8htA4HiqpA3gvxeQkoLgOTMaz6TqSF+8Lv1pjVD50dq6ElHEfDKz+IktIAx4Y46uiGH0EM1Cei1yhIZweb/JhC5+xmEkazLlOy0qiKWZKao=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/teachers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"teachers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get teachers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/teachers",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"teachers"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2785"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:42:49 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"firstname\": \"John\",\n        \"id_number\": \"12345678\",\n        \"address\": \"123 Main St\",\n        \"city\": \"Nairobi\",\n        \"tsc_number\": \"tsc1001\",\n        \"date_of_birth\": \"1980-01-01\",\n        \"teacher_id\": \"21\",\n        \"date_created\": \"2024-02-01 06:01:18\",\n        \"national_insurance_number\": \"12345657\",\n        \"title\": \"Mr.\",\n        \"lastname\": \"Doe\",\n        \"password\": \"password1\",\n        \"phone\": \"0712345678\",\n        \"postal_code\": \"100\",\n        \"email\": \"john.doe@example.com\",\n        \"username\": \"john.doe\"\n    },\n    {\n        \"firstname\": \"Jane\",\n        \"id_number\": \"23456785\",\n        \"address\": \"456 Elm St\",\n        \"city\": \"Mombasa\",\n        \"tsc_number\": \"tsc1002\",\n        \"date_of_birth\": \"1985-02-02\",\n        \"teacher_id\": \"22\",\n        \"date_created\": \"2024-02-01 06:01:18\",\n        \"national_insurance_number\": \"23456788\",\n        \"title\": \"Mrs.\",\n        \"lastname\": \"Smith\",\n        \"password\": \"password2\",\n        \"phone\": \"0712345679\",\n        \"postal_code\": \"200\",\n        \"email\": \"jane.smith@example.com\",\n        \"username\": \"jane.smith\"\n    },\n    {\n        \"firstname\": \"Michael\",\n        \"id_number\": \"34567895\",\n        \"address\": \"789 Pine St\",\n        \"city\": \"Kisumu\",\n        \"tsc_number\": \"tsc1003\",\n        \"date_of_birth\": \"1990-03-03\",\n        \"teacher_id\": \"23\",\n        \"date_created\": \"2024-02-01 06:01:18\",\n        \"national_insurance_number\": \"34567890\",\n        \"title\": \"Dr.\",\n        \"lastname\": \"Johnson\",\n        \"password\": \"password3\",\n        \"phone\": \"0712345680\",\n        \"postal_code\": \"300\",\n        \"email\": \"michael.johnson@example.com\",\n        \"username\": \"michael.johnson\"\n    },\n    {\n        \"firstname\": \"Emily\",\n        \"id_number\": \"45678901\",\n        \"address\": \"101 Oak St\",\n        \"city\": \"Eldoret\",\n        \"tsc_number\": \"tsc1004\",\n        \"date_of_birth\": \"1982-04-04\",\n        \"teacher_id\": \"24\",\n        \"date_created\": \"2024-02-01 06:01:18\",\n        \"national_insurance_number\": \"45678901\",\n        \"title\": \"Ms.\",\n        \"lastname\": \"Williams\",\n        \"password\": \"password4\",\n        \"phone\": \"0712345681\",\n        \"postal_code\": \"400\",\n        \"email\": \"emily.williams@example.com\",\n        \"username\": \"emily.williams\"\n    },\n    {\n        \"firstname\": \"David\",\n        \"id_number\": \"56789056\",\n        \"address\": \"202 Maple St\",\n        \"city\": \"Machakos\",\n        \"tsc_number\": \"tsc1005\",\n        \"date_of_birth\": \"1975-05-05\",\n        \"teacher_id\": \"25\",\n        \"date_created\": \"2024-02-01 06:01:18\",\n        \"national_insurance_number\": \"56789012\",\n        \"title\": \"Mr.\",\n        \"lastname\": \"Brown\",\n        \"password\": \"password5\",\n        \"date_modified\": \"2024-02-27 05:37:50\",\n        \"phone\": \"0712345682\",\n        \"postal_code\": \"500\",\n        \"email\": \"david.brown@example.com\",\n        \"username\": \"david.brown\"\n    },\n    {\n        \"firstname\": \"Luice\",\n        \"id_number\": \"39787873\",\n        \"address\": \"1030\",\n        \"city\": \"Nairobi\",\n        \"tsc_number\": \"35669864\",\n        \"date_of_birth\": \"1995-12-12\",\n        \"teacher_id\": \"26\",\n        \"date_created\": \"2024-02-20 13:56:42\",\n        \"national_insurance_number\": \"12345678\",\n        \"title\": \"Mr\",\n        \"lastname\": \"Kario\",\n        \"password\": \"123456\",\n        \"date_modified\": \"2024-02-20 16:58:33\",\n        \"phone\": \"0798765432\",\n        \"postal_code\": \"90115\",\n        \"email\": \"kariogeorge@gmail.com\",\n        \"username\": \"Kario@203040\"\n    },\n    {\n        \"firstname\": \"Luice2\",\n        \"id_number\": \"397878732\",\n        \"address\": \"1030\",\n        \"city\": \"Nairobi\",\n        \"tsc_number\": \"356698642\",\n        \"date_of_birth\": \"1995-12-12\",\n        \"teacher_id\": \"28\",\n        \"date_created\": \"2024-02-27 13:09:45\",\n        \"national_insurance_number\": \"123456782\",\n        \"title\": \"Mr\",\n        \"lastname\": \"Kario\",\n        \"password\": \"1234562\",\n        \"phone\": \"0798765439\",\n        \"postal_code\": \"90115\",\n        \"email\": \"kario2@gmail.com\",\n        \"username\": \"Kario2@203040\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get teacher",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/teachers/25",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"teachers",
+								"25"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get teacher",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/teachers/25",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"teachers",
+										"25"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "427"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:43:06 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"firstname\": \"David\",\n    \"id_number\": \"56789056\",\n    \"address\": \"202 Maple St\",\n    \"city\": \"Machakos\",\n    \"tsc_number\": \"tsc1005\",\n    \"date_of_birth\": \"1975-05-05\",\n    \"teacher_id\": \"25\",\n    \"date_created\": \"2024-02-01 06:01:18\",\n    \"national_insurance_number\": \"56789012\",\n    \"title\": \"Mr.\",\n    \"lastname\": \"Brown\",\n    \"password\": \"password5\",\n    \"date_modified\": \"2024-02-27 05:37:50\",\n    \"phone\": \"0712345682\",\n    \"postal_code\": \"500\",\n    \"email\": \"david.brown@example.com\",\n    \"username\": \"david.brown\"\n}"
+						}
+					]
+				},
+				{
+					"name": "add teacher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\": \"Luice23\",\n    \"id_number\": \"397878452\",\n    \"address\": \"1030\",\n    \"city\": \"Nairobi\",\n    \"tsc_number\": \"356698656\",\n    \"date_of_birth\": \"1995-12-12\",\n    \"national_insurance_number\": \"123456790\",\n    \"title\": \"Mr\",\n    \"lastname\": \"Kario2\",\n    \"password\": \"12345622\",\n    \"phone\": \"0798765487\",\n    \"postal_code\": \"90115\",\n    \"email\": \"kario23@gmail.com\",\n    \"username\": \"Kario23@203040\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/teachers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"teachers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add teacher",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstname\": \"Luice23\",\n    \"id_number\": \"397878452\",\n    \"address\": \"1030\",\n    \"city\": \"Nairobi\",\n    \"tsc_number\": \"356698656\",\n    \"date_of_birth\": \"1995-12-12\",\n    \"national_insurance_number\": \"123456790\",\n    \"title\": \"Mr\",\n    \"lastname\": \"Kario2\",\n    \"password\": \"12345622\",\n    \"phone\": \"0798765487\",\n    \"postal_code\": \"90115\",\n    \"email\": \"kario23@gmail.com\",\n    \"username\": \"Kario23@203040\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/teachers",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"teachers"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "384"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:48:09 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"firstname\": \"Luice23\",\n    \"id_number\": \"397878452\",\n    \"address\": \"1030\",\n    \"city\": \"Nairobi\",\n    \"tsc_number\": \"356698656\",\n    \"date_of_birth\": \"1995-12-12\",\n    \"teacher_id\": \"29\",\n    \"date_created\": \"2024-03-01 09:48:09\",\n    \"national_insurance_number\": \"123456790\",\n    \"title\": \"Mr\",\n    \"lastname\": \"Kario2\",\n    \"password\": \"12345622\",\n    \"phone\": \"0798765487\",\n    \"postal_code\": \"90115\",\n    \"email\": \"kario23@gmail.com\",\n    \"username\": \"Kario23@203040\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update teacher",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\": \"Luice23\",\n    \"id_number\": \"397878452\",\n    \"address\": \"1030\",\n    \"city\": \"Machakos\"\n  \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/teachers/29",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"teachers",
+								"29"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update teacher",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstname\": \"Luice23\",\n    \"id_number\": \"397878452\",\n    \"address\": \"1030\",\n    \"city\": \"Machakos\"\n  \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/teachers/29",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"teachers",
+										"29"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "423"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:49:25 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"firstname\": \"Luice23\",\n    \"id_number\": \"397878452\",\n    \"address\": \"1030\",\n    \"city\": \"Machakos\",\n    \"tsc_number\": \"356698656\",\n    \"date_of_birth\": \"1995-12-12\",\n    \"teacher_id\": \"29\",\n    \"date_created\": \"2024-03-01 09:48:09\",\n    \"national_insurance_number\": \"123456790\",\n    \"title\": \"Mr\",\n    \"lastname\": \"Kario2\",\n    \"password\": \"12345622\",\n    \"date_modified\": \"2024-03-01 01:49:25\",\n    \"phone\": \"0798765487\",\n    \"postal_code\": \"90115\",\n    \"email\": \"kario23@gmail.com\",\n    \"username\": \"Kario23@203040\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Classes",
+			"item": [
+				{
+					"name": "get classes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "OKTSb+lt0C6rDFtyW8EzWy639brry3MresOVlPeTZZsprsSmHVLKl+LRRBUspUPeoKwJl8EtImCoLQ6/w9LA4qAuYKNbtg0s9eugiMkl5Q8=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/classes",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"classes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get classes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/classes",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"classes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "735"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:50:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"date_modified\": \"2024-02-20 10:25:59\",\n        \"date_created\": \"2024-02-01 05:43:47\",\n        \"class_id\": \"1\",\n        \"class_name\": \"class 1 w\"\n    },\n    {\n        \"date_created\": \"2024-02-01 05:43:47\",\n        \"class_id\": \"2\",\n        \"class_name\": \"Class 2\"\n    },\n    {\n        \"date_created\": \"2024-02-01 05:43:47\",\n        \"class_id\": \"3\",\n        \"class_name\": \"Class 3\"\n    },\n    {\n        \"date_created\": \"2024-02-01 05:43:47\",\n        \"class_id\": \"4\",\n        \"class_name\": \"Class 4\"\n    },\n    {\n        \"date_created\": \"2024-02-20 07:05:31\",\n        \"class_id\": \"5\",\n        \"class_name\": \"class 4 new\"\n    },\n    {\n        \"date_modified\": \"2024-02-27 05:45:37\",\n        \"date_created\": \"2024-02-20 13:36:30\",\n        \"class_id\": \"7\",\n        \"class_name\": \"Form 4 west New 7 8\"\n    },\n    {\n        \"date_created\": \"2024-02-27 09:04:27\",\n        \"class_id\": \"8\",\n        \"class_name\": \"Form 4 west East z\"\n    },\n    {\n        \"date_created\": \"2024-02-27 13:45:53\",\n        \"class_id\": \"9\",\n        \"class_name\": \"Form 4 west East z 5\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get class",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "john.doe",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/classes/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"classes",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get class",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/classes/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"classes",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "118"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 Feb 2024 11:08:38 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"date_modified\": \"2024-02-20 10:25:59\",\n        \"date_created\": \"2024-02-01 05:43:47\",\n        \"class_id\": \"1\",\n        \"class_name\": \"class 1 w\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "add class",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n           \"class_name\": \"class 1 wz\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/classes",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"classes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add class",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\n           \"class_name\": \"class 1 wz\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/classes",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"classes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:51:21 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"date_created\": \"2024-03-01 09:51:21\",\n    \"class_id\": \"10\",\n    \"class_name\": \"class 1 wz\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update class",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n          \"class_name\": \"class 1 wz new\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/classes/10",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"classes",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update class",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\n          \"class_name\": \"class 1 wz new\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/classes/10",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"classes",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:52:03 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"date_modified\": \"2024-03-01 01:52:03\",\n    \"date_created\": \"2024-03-01 09:51:21\",\n    \"class_id\": \"10\",\n    \"class_name\": \"class 1 wz new\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Options",
+			"item": [
+				{
+					"name": "get options",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/options",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"options"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get options",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/options",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"options"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1428"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:55:40 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"option_value\": \"A figure of speech\",\n        \"option_label\": \"A\",\n        \"correct\": \"0\",\n        \"date_created\": \"2024-02-01 06:36:53\",\n        \"option_id\": \"1\",\n        \"question_id\": \"1\"\n    },\n    {\n        \"option_value\": \"A literal expression\",\n        \"option_label\": \"B\",\n        \"correct\": \"0\",\n        \"date_created\": \"2024-02-01 06:36:53\",\n        \"option_id\": \"2\",\n        \"question_id\": \"1\"\n    },\n    {\n        \"option_value\": \"A comparison without using like or as\",\n        \"option_label\": \"C\",\n        \"correct\": \"1\",\n        \"date_created\": \"2024-02-01 06:36:53\",\n        \"option_id\": \"3\",\n        \"question_id\": \"1\"\n    },\n    {\n        \"option_value\": \"A type of onomatopoeia\",\n        \"option_label\": \"D\",\n        \"correct\": \"0\",\n        \"date_created\": \"2024-02-01 06:36:53\",\n        \"option_id\": \"4\",\n        \"question_id\": \"1\"\n    },\n    {\n        \"option_value\": \"A comedy\",\n        \"option_label\": \"A\",\n        \"correct\": \"0\",\n        \"date_created\": \"2024-02-01 06:36:53\",\n        \"option_id\": \"5\",\n        \"question_id\": \"2\"\n    },\n    {\n        \"option_value\": \"A tragedy\",\n        \"option_label\": \"B\",\n        \"correct\": \"1\",\n        \"date_created\": \"2024-02-01 06:36:53\",\n        \"option_id\": \"6\",\n        \"question_id\": \"2\"\n    },\n    {\n        \"option_value\": \"A history play\",\n        \"option_label\": \"C\",\n        \"correct\": \"0\",\n        \"date_created\": \"2024-02-01 06:36:53\",\n        \"option_id\": \"7\",\n        \"question_id\": \"2\"\n    },\n    {\n        \"option_value\": \"A romance\",\n        \"option_label\": \"D\",\n        \"correct\": \"0\",\n        \"date_created\": \"2024-02-01 06:36:53\",\n        \"option_id\": \"8\",\n        \"question_id\": \"2\"\n    },\n    {\n        \"option_value\": \"Its educational impact\",\n        \"option_label\": \"A\",\n        \"correct\": \"0\",\n        \"date_created\": \"2024-02-01 06:36:53\",\n        \"option_id\": \"9\",\n        \"question_id\": \"3\"\n    },\n    {\n        \"option_value\": \"Its influence on technology\",\n        \"option_label\": \"B\",\n        \"correct\": \"0\",\n        \"date_created\": \"2024-02-01 06:36:53\",\n        \"option_id\": \"10\",\n        \"question_id\": \"3\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get option",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/options/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"options",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get option",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/options/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"options",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "141"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 09:56:06 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"option_value\": \"A figure of speech\",\n    \"option_label\": \"A\",\n    \"correct\": \"0\",\n    \"date_created\": \"2024-02-01 06:36:53\",\n    \"option_id\": \"1\",\n    \"question_id\": \"1\"\n}"
+						}
+					]
+				},
+				{
+					"name": "add option",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"option_value\": \"A figure of speech\",\n    \"option_label\": \"A\",\n    \"correct\": \"0\",\n    \"question_id\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/options",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"options"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update option",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"option_value\": \"A figure of speech new\",\n    \"option_label\": \"A\",\n    \"correct\": \"0\",\n    \"question_id\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/options/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"options",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update option",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"option_value\": \"A figure of speech new\",\n    \"option_label\": \"A\",\n    \"correct\": \"0\",\n    \"question_id\": \"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/options/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"options",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "183"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 10:01:02 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"option_value\": \"A figure of speech new\",\n    \"option_label\": \"A\",\n    \"correct\": \"0\",\n    \"date_modified\": \"2024-03-01 02:01:02\",\n    \"date_created\": \"2024-02-01 06:36:53\",\n    \"option_id\": \"1\",\n    \"question_id\": \"1\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Responses",
+			"item": [
+				{
+					"name": "get responses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/responses",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"responses"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get responses",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/responses",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"responses"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1100"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 10:01:36 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"response_id\": \"26\",\n        \"date_created\": \"2024-02-01 08:07:57\",\n        \"student_id\": \"1\",\n        \"option_id\": \"3\",\n        \"question_id\": \"1\"\n    },\n    {\n        \"response_id\": \"27\",\n        \"date_created\": \"2024-02-01 08:07:57\",\n        \"student_id\": \"1\",\n        \"option_id\": \"6\",\n        \"question_id\": \"2\"\n    },\n    {\n        \"response_id\": \"28\",\n        \"date_created\": \"2024-02-01 08:07:57\",\n        \"student_id\": \"1\",\n        \"option_id\": \"12\",\n        \"question_id\": \"3\"\n    },\n    {\n        \"response_id\": \"29\",\n        \"date_created\": \"2024-02-01 08:07:57\",\n        \"student_id\": \"1\",\n        \"option_id\": \"14\",\n        \"question_id\": \"4\"\n    },\n    {\n        \"response_id\": \"30\",\n        \"date_created\": \"2024-02-01 08:07:57\",\n        \"student_id\": \"1\",\n        \"option_id\": \"18\",\n        \"question_id\": \"5\"\n    },\n    {\n        \"response_id\": \"31\",\n        \"date_created\": \"2024-02-01 08:07:57\",\n        \"student_id\": \"1\",\n        \"option_id\": \"21\",\n        \"question_id\": \"6\"\n    },\n    {\n        \"response_id\": \"32\",\n        \"date_created\": \"2024-02-01 08:07:57\",\n        \"student_id\": \"1\",\n        \"option_id\": \"25\",\n        \"question_id\": \"7\"\n    },\n    {\n        \"response_id\": \"33\",\n        \"date_created\": \"2024-02-01 08:07:57\",\n        \"student_id\": \"1\",\n        \"option_id\": \"29\",\n        \"question_id\": \"8\"\n    },\n    {\n        \"response_id\": \"34\",\n        \"date_created\": \"2024-02-01 08:07:57\",\n        \"student_id\": \"1\",\n        \"option_id\": \"36\",\n        \"question_id\": \"9\"\n    },\n    {\n        \"response_id\": \"35\",\n        \"date_created\": \"2024-02-01 08:07:57\",\n        \"student_id\": \"1\",\n        \"option_id\": \"39\",\n        \"question_id\": \"10\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get response",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/responses/27",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"responses",
+								"27"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/responses/27",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"responses",
+										"27"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "108"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 10:02:08 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_id\": \"27\",\n    \"date_created\": \"2024-02-01 08:07:57\",\n    \"student_id\": \"1\",\n    \"option_id\": \"6\",\n    \"question_id\": \"2\"\n}"
+						}
+					]
+				},
+				{
+					"name": "add response",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"student_id\": \"1\",\n    \"option_id\": \"6\",\n    \"question_id\": \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/responses",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"responses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update response",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"student_id\": \"1\",\n    \"option_id\": \"6\",\n    \"question_id\": \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/responses/27",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"responses",
+								"27"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"student_id\": \"1\",\n    \"option_id\": \"6\",\n    \"question_id\": \"2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/responses/27",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"responses",
+										"27"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "146"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 10:03:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"date_modified\": \"2024-03-01 02:03:13\",\n    \"response_id\": \"27\",\n    \"date_created\": \"2024-02-01 08:07:57\",\n    \"student_id\": \"1\",\n    \"option_id\": \"6\",\n    \"question_id\": \"2\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Schedules",
+			"item": [
+				{
+					"name": "get schedules",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/schedules",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"schedules"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get schedules",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/schedules",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"schedules"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1021"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 10:04:36 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"subject_id\": \"1\",\n        \"teacher_id\": \"21\",\n        \"date_created\": \"2024-02-01 06:19:18\",\n        \"exam_schedule_id\": \"1\",\n        \"class_id\": \"1\",\n        \"exam_duration\": \"30\",\n        \"month_year\": \"2024-03\",\n        \"exam_date\": \"2024-02-20 09:14:07\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"subject_id\": \"2\",\n        \"teacher_id\": \"22\",\n        \"date_created\": \"2024-02-01 06:19:18\",\n        \"exam_schedule_id\": \"2\",\n        \"class_id\": \"1\",\n        \"exam_duration\": \"60\",\n        \"month_year\": \"2024-03\",\n        \"exam_date\": \"2024-02-18 09:16:03\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"subject_id\": \"3\",\n        \"teacher_id\": \"23\",\n        \"date_created\": \"2024-02-01 06:19:18\",\n        \"exam_schedule_id\": \"3\",\n        \"class_id\": \"1\",\n        \"exam_duration\": \"40\",\n        \"month_year\": \"2024-03\",\n        \"exam_date\": \"2024-02-19 09:16:45\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"subject_id\": \"4\",\n        \"teacher_id\": \"24\",\n        \"date_created\": \"2024-02-01 06:19:18\",\n        \"exam_schedule_id\": \"4\",\n        \"class_id\": \"1\",\n        \"exam_duration\": \"40\",\n        \"month_year\": \"2024-03\",\n        \"exam_date\": \"2024-02-18 09:17:30\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"subject_id\": \"5\",\n        \"teacher_id\": \"25\",\n        \"date_created\": \"2024-02-01 06:19:18\",\n        \"exam_schedule_id\": \"5\",\n        \"class_id\": \"1\",\n        \"exam_duration\": \"40\",\n        \"month_year\": \"2024-03\",\n        \"exam_date\": \"2024-02-19 09:18:28\",\n        \"exam_id\": \"1\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get schedule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/schedules/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"schedules",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get schedule",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/schedules/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"schedules",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "203"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 10:05:00 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"subject_id\": \"1\",\n    \"teacher_id\": \"21\",\n    \"date_created\": \"2024-02-01 06:19:18\",\n    \"exam_schedule_id\": \"1\",\n    \"class_id\": \"1\",\n    \"exam_duration\": \"30\",\n    \"month_year\": \"2024-03\",\n    \"exam_date\": \"2024-02-20 09:14:07\",\n    \"exam_id\": \"1\"\n}"
+						}
+					]
+				},
+				{
+					"name": "add schedule",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subject_id\": \"1\",\n    \"teacher_id\": \"21\",\n    \"class_id\": \"1\",\n    \"exam_duration\": \"30\",\n    \"month_year\": \"2024-08\",\n    \"exam_id\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/schedules",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"schedules"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add schedule",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"subject_id\": \"1\",\n    \"teacher_id\": \"21\",\n    \"class_id\": \"1\",\n    \"exam_duration\": \"30\",\n    \"month_year\": \"2024-08\",\n    \"exam_id\": \"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/schedules",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"schedules"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "169"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 10:46:06 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"subject_id\": \"1\",\n    \"teacher_id\": \"21\",\n    \"date_created\": \"2024-03-01 10:46:05\",\n    \"exam_schedule_id\": \"6\",\n    \"class_id\": \"1\",\n    \"exam_duration\": \"30\",\n    \"month_year\": \"2024-08\",\n    \"exam_id\": \"1\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update schedule",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subject_id\": \"2\",\n    \"teacher_id\": \"21\",\n    \"class_id\": \"2\",\n    \"exam_duration\": \"30\",\n    \"month_year\": \"2024-07\",\n    \"exam_id\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/schedules/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"schedules",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update schedule",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"subject_id\": \"1\",\n    \"teacher_id\": \"21\",\n    \"class_id\": \"1\",\n    \"exam_duration\": \"30\",\n    \"month_year\": \"2024-07\",\n    \"exam_id\": \"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/schedules/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"schedules",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "241"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 10:47:20 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"subject_id\": \"1\",\n    \"date_modified\": \"2024-03-01 02:47:20\",\n    \"teacher_id\": \"21\",\n    \"date_created\": \"2024-02-01 06:19:18\",\n    \"exam_schedule_id\": \"1\",\n    \"class_id\": \"1\",\n    \"exam_duration\": \"30\",\n    \"month_year\": \"2024-07\",\n    \"exam_date\": \"2024-02-20 09:14:07\",\n    \"exam_id\": \"1\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "student score per question",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/reports/student-score/1/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reports",
+								"student-score",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "student per question",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/reports/student-score/1/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"reports",
+										"student-score",
+										"1",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7672"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 10:48:22 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"option_value\": \"A comparison without using like or as\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"C\",\n        \"correct\": \"1\",\n        \"subject_name\": \"English\",\n        \"student_id\": \"1\",\n        \"text\": \"Define the term \\\"metaphor\\\".\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"1\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"A tragedy\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"B\",\n        \"correct\": \"1\",\n        \"subject_name\": \"English\",\n        \"student_id\": \"1\",\n        \"text\": \"Analyze the main theme in Shakespeare’s \\\"Macbeth\\\".\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"2\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Its cultural and societal influence\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"D\",\n        \"correct\": \"1\",\n        \"subject_name\": \"English\",\n        \"student_id\": \"1\",\n        \"text\": \"Write a short essay on the impact of literature in modern society.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"3\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"A simile uses like or as\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"B\",\n        \"correct\": \"1\",\n        \"subject_name\": \"English\",\n        \"student_id\": \"1\",\n        \"text\": \"Explain the difference between a simile and a metaphor.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"4\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Subject and verb\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"B\",\n        \"correct\": \"1\",\n        \"subject_name\": \"English\",\n        \"student_id\": \"1\",\n        \"text\": \"Identify the subject and predicate in this sentence: \\\"The quick brown fox jumps over the lazy dog.\\\"\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"5\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"x = 3\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Mathematics\",\n        \"student_id\": \"1\",\n        \"text\": \"Solve the equation 3x + 5 = 14.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"6\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"2x + 3\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Mathematics\",\n        \"student_id\": \"1\",\n        \"text\": \"Calculate the derivative of the function f(x) = x^2 + 3x.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"7\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"0.7\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Mathematics\",\n        \"student_id\": \"1\",\n        \"text\": \"If the probability of event A is 0.3, what is the probability of its complement?\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"8\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"A diagonal line\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"D\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Mathematics\",\n        \"student_id\": \"1\",\n        \"text\": \"Graph the function y = 2x - 4.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"9\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"75π square units\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"C\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Mathematics\",\n        \"student_id\": \"1\",\n        \"text\": \"Find the area of a circle with radius 5 units.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"10\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Fasihi ya kusisimua\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"C\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Kiswahili\",\n        \"student_id\": \"1\",\n        \"text\": \"Taja na ueleze sifa kuu za fasihi simulizi.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"11\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Uhalisia\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"B\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Kiswahili\",\n        \"student_id\": \"1\",\n        \"text\": \"Changanua maudhui ya riwaya ya \\\"Kusadikika\\\" na Shaaban Robert.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"12\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Kuwa na haraka huleta matatizo\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"B\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Kiswahili\",\n        \"student_id\": \"1\",\n        \"text\": \"Eleza maana ya methali: \\\"Haraka haraka haina baraka.\\\"\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"13\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Upendo ni kama ua\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Kiswahili\",\n        \"student_id\": \"1\",\n        \"text\": \"Tunga sentensi kwa kutumia neno \\\"upendo\\\".\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"14\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"NG-VA, LI-YA\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Kiswahili\",\n        \"student_id\": \"1\",\n        \"text\": \"Taja na ueleze ngeli za Kiswahili.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"15\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Territorial disputes\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"C\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Social Studies\",\n        \"student_id\": \"1\",\n        \"text\": \"Describe the major causes of World War II.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"16\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Evaporation and precipitation\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Social Studies\",\n        \"student_id\": \"1\",\n        \"text\": \"Explain the water cycle and its importance to the environment.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"17\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Exploitation of resources\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"C\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Social Studies\",\n        \"student_id\": \"1\",\n        \"text\": \"Discuss the impact of colonialism in African countries.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"18\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Executive, Legislative, and Judicial\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Social Studies\",\n        \"student_id\": \"1\",\n        \"text\": \"Name and describe the three branches of government.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"19\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Non-renewable energy sources\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"0.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"0\",\n        \"subject_name\": \"Social Studies\",\n        \"student_id\": \"1\",\n        \"text\": \"What are renewable resources? Give two examples.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"20\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Conversion of sunlight into chemical energy\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Science\",\n        \"student_id\": \"1\",\n        \"text\": \"What is the process of photosynthesis?\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"21\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"For every action, there is an equal reaction\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Science\",\n        \"student_id\": \"1\",\n        \"text\": \"Explain Newton’s third law of motion.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"22\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Nucleus, mitochondria, ribosomes\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"B\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Science\",\n        \"student_id\": \"1\",\n        \"text\": \"Describe the structure of a plant cell.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"23\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"Solid, liquid, gas, and plasma\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Science\",\n        \"student_id\": \"1\",\n        \"text\": \"What are the states of matter? Give an example of each.\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"24\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    },\n    {\n        \"option_value\": \"A community of living organisms and their physical environment\",\n        \"firstname\": \"John\",\n        \"percentage_score\": \"100.0000\",\n        \"option_label\": \"A\",\n        \"correct\": \"1\",\n        \"subject_name\": \"Science\",\n        \"student_id\": \"1\",\n        \"text\": \"Define and explain the term \\\"ecosystem\\\".\",\n        \"exam_name\": \"Final exam\",\n        \"question_id\": \"25\",\n        \"lastname\": \"Doe1\",\n        \"exam_id\": \"1\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get teacher exam",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/reports/teacher-exam/21",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reports",
+								"teacher-exam",
+								"21"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get teacher exam",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/reports/teacher-exam/21",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"reports",
+										"teacher-exam",
+										"21"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "229"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Mar 2024 10:55:25 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"subject_name\": \"Mathematics\",\n        \"exam_name\": \"Final exam\",\n        \"class_name\": \"Class 2\",\n        \"exam_id\": \"1\",\n        \"username\": \"john.doe\"\n    },\n    {\n        \"subject_name\": \"English\",\n        \"exam_name\": \"Final exam\",\n        \"class_name\": \"class 1 w\",\n        \"exam_id\": \"1\",\n        \"username\": \"john.doe\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Generate General exam report",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/reports/general-exam-report/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reports",
+								"general-exam-report",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authendication",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n    \"username\":\"student3\",\n    \"password\":\"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/authentication/login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"authentication",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "QulLLaS1pgu2Qf33sXGmDvSh3Cx1U4AYAAmEd1MFD+dv+j1S+21JZQGF7xqcuW8RTIduVrilCjcwMcCYx+Xk5gRc2txF0oSNlJ5CjkCLDPg=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n    \"username\":\"john.doe\",\n    \"password\":\"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/authentication/refresh",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"authentication",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://172.20.94.27:9000/api",
+			"type": "string"
+		}
+	]
+}
